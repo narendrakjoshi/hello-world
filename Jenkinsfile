@@ -3,7 +3,19 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo Hello'
+                sh 'echo Building...'
+                sh 'chmod +x hello-world.sh'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'echo Testing...'
+            }
+        }
+        stage('run') {
+            steps {
+                sh 'echo Running...'
+                sh './hello-world.sh'
             }
         }
     }
