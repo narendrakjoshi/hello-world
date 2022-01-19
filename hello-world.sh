@@ -1,4 +1,4 @@
 #! /bin/bash
 
-BRANCH_NAME="main"
+BRANCH_NAME="demo-branch-1"
 printf "\nHello from $BRANCH_NAME branch\n"
