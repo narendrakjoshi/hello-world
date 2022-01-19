@@ -1,3 +1,4 @@
 #! /bin/bash
 
-printf "\nHello World\n"
+BRANCH_NAME="main"
+printf "\nHello from $BRANCH_NAME branch\n"
